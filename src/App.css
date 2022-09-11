@@ -1,0 +1,119 @@
+body{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  min-height:100%;
+  width: 100vw;
+  background-size:cover;
+  background-image: url( "https://unsplash.imgix.net/photo-1423683249427-8ca22bd873e0?fit=crop&fm=jpg&h=700&q=75&w=1050");
+  background-position:100;
+  background-repeat: no-repeat;
+}
+
+.header{
+ 
+  margin-top: 10px;
+  text-align: center;
+font-size: 58px;
+color:rgb(65, 62, 62);
+}
+.todayWeater, .oneWeather{
+background: #6d7082;
+background: -moz-radial-gradient(center, ellipse cover,  #464749 0%, #191a1b 44%, #e5e9ed 100%); 
+background: -webkit-radial-gradient(center, ellipse cover,  #7abcff 0%,#444647 44%,#5ca5ed 100%); 
+background: -o-radial-gradient(center, ellipse cover,  #212121 0%,#60abf8 44%,#708294 100%); 
+background: -ms-radial-gradient(center, ellipse cover,  #7abcff 0%,#505254 44%,#353c42 100%); 
+background: radial-gradient(ellipse at center, #4993e3 44%,#536a82 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=1 ); 
+opacity: .6;
+border-radius: 10px;
+  top:calc(50% - 125px);
+  left: calc(50% - 200px);
+  border: 3px solid #FFFFFF;
+  padding: 10px 20px;
+  color: white;
+  margin: 10px;
+  transition: all 0.5s ease-in;
+}
+.todayWeater{
+  height: 350px;
+  width: 500px;
+}
+.oneWeather{
+  height: 210px;
+  width: 400px;
+}
+.allWeather{
+  display: flex;
+  justify-content: space-between;
+}
+  .current{
+    font-size: 65px;
+    text-align: right;
+  }
+  .mainOfWeater{
+    align-items: center;
+    justify-content: center;
+  }
+  .placesAutocomplete{
+    text-align: center;
+  }
+  label{
+font-size: 20px;
+
+  }
+  input{
+width: 350px;
+height: 25px;
+font-size: 20px;
+margin: 15px;
+border-radius: 5px;
+  }
+  .radio {
+    background: #8a8da2;
+    padding: 4px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 3px rgba(35, 33, 45, 0.3),
+      0 0 0 3px rgba(185, 185, 185, 0.3);
+    position: relative;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+  }
+  .radio input {
+    width: auto;
+    height: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 4px 8px;
+    background: #454857;
+    color: #bdbdbdbd;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    transition: all 100ms linear;
+  }
+  
+  .radio input:checked {
+    background-image: linear-gradient(180deg, #dcd9e7, #7479bb);
+    color: #fff;
+    box-shadow: 0 1px 1px #0000002e;
+    text-shadow: 0 1px 0px #79485f7a;
+  }
+  
+  .radio input:before {
+    content: attr(label);
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  #input{
+    width: 1000px;
+  }
+  
